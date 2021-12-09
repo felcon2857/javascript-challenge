@@ -13,3 +13,9 @@ function accum(s) {
   console.log(myArray);
 }
 accum("ZpglnRxqenU");
+
+// other return
+function accum(s) {
+  const my_array = s.split("").map((x, index) => x.toUpperCase() + Array(index + 1).join(x.toLowerCase())).join("-")
+  return my_array;
+}
